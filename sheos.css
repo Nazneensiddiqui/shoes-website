@@ -1,0 +1,230 @@
+.nevbar{position: fixed;
+    background-color: rgb(229, 240, 243);
+display: flex;
+gap: 70px; height: 50px;flex-wrap: wrap-reverse; }
+
+.nevbar h4{ position: relative;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;}
+
+   .bars1 details summary:hover{ color: rgb(236, 16, 16);}
+   .bars h1:hover{color: blueviolet;}
+
+@keyframes slide{
+       to{ left: -10px;
+            top:0px;}
+        from{
+            top:0;
+            left:100px;}}
+
+     .nevbar ul{ display: flex;
+        gap: 30px; align-items: center;}
+
+      .sona label{display: none;}
+      .sona label i{ color: blue;}
+    
+
+      .list ul li{display: none;}
+
+             #demo{display: none;}    /*checkbox hatane ke liye*/
+
+ #demo:checked~.list ul li{display: block;} /*icon ko cilick karne par open hone wali list ko target karne ke liye*/
+
+ @media screen and (max-width:800px) { 
+    .nevbar ul{ display: none;}
+
+    .sona{display: none;}
+ .list ul li{display: block; position: absolute;
+        top: 150px;
+        width: 100%;}
+
+    .sona label{ display: block;}
+
+    .bars ul i{display: block;}
+    .bars ul li{display: none;}
+}
+
+
+
+
+
+
+
+            
+ .bars{justify-content: right;
+    background-color:whitesmoke;
+display: flex; align-items: center;flex-wrap: wrap-reverse;}
+
+.bars ul{justify-content: space-around;
+                display: flex;
+                gap: 30px;}
+                .bars h1{position:absolute;
+                    left: 600px; font-family: initial}
+.bars h1{
+    color:rgb(243, 13, 13);}
+
+
+.deta{display: flex; justify-content: space-around;
+    flex-wrap: wrap-reverse;
+        }
+.bars1{
+    background-color:whitesmoke;
+    display: flex; justify-content: center; gap: 100px;
+    flex-wrap: wrap-reverse; height: 50px;
+    }
+
+
+        .ch{background-color: white;
+            flex-wrap: wrap-reverse;
+            border:0.5px ; box-shadow: 2px 3px 5px black;}
+     .parent{position: absolute; top: 180px; left: 0px;
+        width: 100%; flex-wrap: wrap-reverse;
+        
+        display: grid;
+                grid-template-columns: repeat(6,auto);}
+                .parent h3{
+                    color: rgb(241, 196, 196);
+                }
+                .ch ul{
+                    color: lightslategray;
+                    line-height: 40px;
+                }
+ /*tablet view */  
+     @media screen and (min-width:450px) and (max-width:800px) {
+        .perant{ grid-template-columns: repeat(3,auto);} }
+
+ /*mobile view */
+        @media screen and (max-width:449px) {
+        .perant{ grid-template-columns: auto;} }
+
+
+.son{background-color: white;
+    flex-wrap: wrap-reverse;
+ border:0.5px ; box-shadow: 2px 3px 5px black;}
+    .papa{position: absolute; top: 180px; left: 20px;
+        width: 1350px;flex-wrap: wrap-reverse;
+         display: grid;
+         grid-template-columns: repeat(5,auto);}
+        .papa h3{
+             color: rgb(241, 196, 196); }
+         .son ul{
+            color: lightslategray;
+            line-height: 40px; }
+                               
+                                
+.wo{background-color: white;
+    flex-wrap: wrap-reverse;
+ border:0.5px ; box-shadow: 2px 3px 5px black;}
+    .wom{position: absolute; top: 180px; left: 20px;
+        width: 1350px;flex-wrap: wrap-reverse;
+         display: grid;
+         grid-template-columns: repeat(6,auto);}
+        .wom h3{
+             color: rgb(241, 196, 196); }
+         .wo ul{
+            color: lightslategray;
+            line-height: 40px; }
+
+                               
+ .of{background-color: white;
+                flex-wrap: wrap-reverse;
+             border:0.5px ; box-shadow: 2px 3px 5px black;}
+                .off{position: absolute; top: 180px; left: 20px;
+                    width: 1350px;flex-wrap: wrap-reverse;
+                     display: grid;
+                     grid-template-columns: repeat(6,auto);}
+                    .off h3{
+                         color: rgb(241, 196, 196); }
+                     .of ul{
+                        color: lightslategray;
+                        line-height: 40px; }
+
+
+ .ab1{background-color: white;
+     flex-wrap: wrap-reverse; box-shadow: 2px 3px 5px black; 
+  border:0.5px ; }
+ .ab{ width: 1350px;flex-wrap: wrap-reverse;
+     display: grid; position: absolute; top: 180px; 
+     grid-template-columns: repeat(6,auto);}
+    .ab1 ul{color: lightslategray;
+         line-height: 40px; }
+
+       
+          .web img{width: 1200px; align-items: center; padding: 60px; flex-wrap: wrap-reverse}   
+      .web1 img{width: 1200px; align-items: center; padding: 60px; flex-wrap: wrap-reverse}   
+      .web2 img{width: 1200px; align-items: center; padding: 60px; flex-wrap: wrap-reverse}  
+      
+      .for{display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse }
+
+        h1:hover{ color: blue;}
+        .mens button:hover{ background-color: rgb(245, 160, 160); color: blue;
+        border-radius: 10px; box-sizing: initial;flex-wrap: wrap-reverse  }
+
+        
+.mens{ background-color:rgb(255, 243, 243); display: flex; flex-wrap: wrap-reverse;
+    justify-content: space-evenly; padding: 50px;margin: 20px; }
+
+    .mens img:hover{ height: 310px; width: 310px;}
+           
+.mens h2{color:blueviolet; flex-wrap: wrap-reverse;}
+.mens h4{color: darkgreen;}
+           
+.men1{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men2{height:520px; flex-wrap: wrap-reverse;
+    width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+           
+    .men3{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+    .men4{height:520px; flex-wrap: wrap-reverse;
+         width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men5{height:520px; flex-wrap: wrap-reverse;
+    width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+            
+ .men6{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men7{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men8{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men9{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men10{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men11{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+
+ .men12{height:520px; flex-wrap: wrap-reverse;
+     width:250px; box-shadow: 1px 1px 2px black; padding-right: 20px; }
+       
+     .head{flex-wrap: wrap-reverse;background-color: rgb(255, 247, 238); 
+          margin:20px; height: 900px; position: relative; top:50px;}
+          input:hover{  background-color: black;}
+
+    /*img:hover{
+        height: 400px; width: 320px}*/
+
+  
+
+        .cost{background-color: rgb(223, 225, 226); height: 400px; margin-top: 100px;}
+     
+      .slide{  display: flex; justify-content: space-evenly;
+         box-shadow: 2px 2px 2px black; }  
+
+         .slide1{ background-color: rgb(223, 225, 226); padding: 20px;
+            box-shadow: 2px 2px 2px 2px white; }  
+            
+          
+
+           
