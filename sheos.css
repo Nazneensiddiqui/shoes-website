@@ -1,27 +1,50 @@
-.nevbar{position: fixed;
-    background-color: rgb(229, 240, 243);
-display: flex;
-gap: 70px; height: 50px;flex-wrap: wrap-reverse; }
+.nevbar{width: 100%;
+     height: 50px;
+     background-color:whitesmoke;
+     display: flex;
+     gap: 70px; flex-wrap: wrap-reverse; }
 
 .nevbar h4{ position: relative;
     animation-name: slide;
     animation-duration: 2s;
     animation-iteration-count: infinite;}
 
+    @keyframes slide{
+        to{ left: -10px;
+             top:0px;}
+         from{
+             top:0;
+             left:100px;}}
+
+ .nevbar ul{ display: flex; 
+    position: relative;
+     left: 100px;
+    gap: 30px; 
+     align-items: center;}
+
+     .bars{ height: 50px;
+     width: 100%;
+    background-color:rgb(242, 238, 238);
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap-reverse;}
+    
+    .bars ul{display: flex;
+         position: absolute;
+          left: 1000px;
+        gap: 20px;}
+
+     .bars h1{position:absolute; 
+        left: 600px;
+         color:rgb(243, 13, 13);
+          font-family: initial}
+    
+        
+
    .bars1 details summary:hover{ color: rgb(236, 16, 16);}
    .bars h1:hover{color: blueviolet;}
 
-@keyframes slide{
-       to{ left: -10px;
-            top:0px;}
-        from{
-            top:0;
-            left:100px;}}
-
-     .nevbar ul{ display: flex;
-        gap: 30px; align-items: center;}
-
-      .sona label{display: none;}
+     .sona label{display: none;}
       .sona label i{ color: blue;}
     
 
@@ -34,10 +57,10 @@ gap: 70px; height: 50px;flex-wrap: wrap-reverse; }
  @media screen and (max-width:800px) { 
     .nevbar ul{ display: none;}
 
-    .sona{display: none;}
+.bars1 details summary{display: none;}
+
  .list ul li{display: block; position: absolute;
-        top: 150px;
-        width: 100%;}
+        top: 150px;}
 
     .sona label{ display: block;}
 
@@ -45,31 +68,14 @@ gap: 70px; height: 50px;flex-wrap: wrap-reverse; }
     .bars ul li{display: none;}
 }
 
+.bars img{
+    position: absolute;
+     top: 55px;
+     left: 50px;
+}
 
-
-
-
-
-
-            
- .bars{justify-content: right;
-    background-color:whitesmoke;
-display: flex; align-items: center;flex-wrap: wrap-reverse;}
-
-.bars ul{justify-content: space-around;
-                display: flex;
-                gap: 30px;}
-                .bars h1{position:absolute;
-                    left: 600px; font-family: initial}
-.bars h1{
-    color:rgb(243, 13, 13);}
-
-
-.deta{display: flex; justify-content: space-around;
-    flex-wrap: wrap-reverse;
-        }
-.bars1{
-    background-color:whitesmoke;
+  .bars1{
+    background-color:rgb(242, 238, 238);
     display: flex; justify-content: center; gap: 100px;
     flex-wrap: wrap-reverse; height: 50px;
     }
@@ -212,18 +218,30 @@ display: flex; align-items: center;flex-wrap: wrap-reverse;}
           margin:20px; height: 900px; position: relative; top:50px;}
           input:hover{  background-color: black;}
 
-    /*img:hover{
+   /* img:hover{
         height: 400px; width: 320px}*/
 
   
 
-        .cost{background-color: rgb(223, 225, 226); height: 400px; margin-top: 100px;}
+    .cost{background-color:white;
+        height: 400px; margin-top: 100px;}
+        .cost i{
+            color: blue;
+            font-size: 100px;
+        }
      
-      .slide{  display: flex; justify-content: space-evenly;
-         box-shadow: 2px 2px 2px black; }  
+ .slide{display: flex;
+     justify-content: space-evenly;}  
 
-         .slide1{ background-color: rgb(223, 225, 226); padding: 20px;
-            box-shadow: 2px 2px 2px 2px white; }  
+ .slide1{ background-color:white;
+ padding: 20px; box-shadow: 2px 2px 2px 3px rgb(236, 233, 233) ; 
+ line-height: 15px;
+  font-family: 'Times New Roman', Times, serif;} 
+  
+  .desk{margin: 10px;}
+  .city{margin-left:70px ;}
+
+  
             
           
 
